@@ -24,4 +24,4 @@ jobs:
       - name: Run Bot
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
-        run: npm run assign-issue
+        run: npx ts-node src/main.ts
